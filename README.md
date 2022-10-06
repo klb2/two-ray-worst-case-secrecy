@@ -3,6 +3,10 @@
 This repository is accompanying the paper "..." (Karl-L. Besser, Eduard
 Jorswieck, and Justin Coon, IEEE ICC 2023).
 
+```diff
+! Update final paper title
+```
+
 The idea is to give an interactive version of the calculations and presented
 concepts to the reader. One can also change different parameters and explore
 different behaviors on their own.
