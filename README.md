@@ -50,7 +50,6 @@ The present code was developed and tested with the following versions:
 - Jupyter 1.0
 - numpy 1.22
 - scipy 1.8
-- sdeint 0.2.4
 
 Make sure you have [Python3](https://www.python.org/downloads/) installed on
 your computer.
