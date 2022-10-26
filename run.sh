@@ -19,10 +19,14 @@ python3 two_frequencies.py -v -f "$FREQ" -df "$DF" -t "$HTX" -r "$HRX" --plot --
 echo "Figure 4: Worst-case achievable rate for Eve"
 python3 rates.py -v -f "500e6" "1e9" "2.4e9" -w "$BW" -t "$HTX" -r "$HRX" --plot --export
 
-echo "Figure 5: Secrecy rate over frequency spacing"
+echo "Figure 5: Secrecy rate over frequency spacing (Example 3)"
 python3 secrecy_rate.py -v -t "$HTX" -r "$HRX" -re "$HRX" -f "$FREQ" -w "$BW" -dmin 20 -dmax 30 --d_min_eve 100 --plot --export
+
+echo "Example 4: Higher Frequency Example"
+python3 secrecy_rate.py -v -t "5" -r "1" -re "1.5" -dmin 40 -dmax 50 --d_min_eve 100 -f "30e9" -w "100e3" --plot
 
 
 echo "Example 5: Conditions for a positive ZOSC"
 python3 conditions_positive_zosc.py -v -f "$FREQ" -w "$BW" -t "$HTX" -r "$HRX" -re "$HRX" -dmin 20 -dmax 30 --d_min_eve 100
 python3 conditions_positive_zosc.py -v -f "$FREQ" -w "$BW" -t "$HTX" -r "$HRX" -re "$HRX" -dmin 20 -dmax 30 --d_min_eve 50
+python3 conditions_positive_zosc.py -v -f "$FREQ" -w "$BW" -t "$HTX" -r "$HRX" -re "$HRX" -dmin 20 -dmax 30 --d_min_eve 20
