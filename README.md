@@ -1,11 +1,8 @@
 # Worst-Case Secrecy Rate Optimization for Two-Ray Scenarios
 
-This repository is accompanying the paper "..." (Karl-L. Besser, Eduard
-Jorswieck, and Justin Coon, IEEE ICC 2023).
-
-```diff
-! Update final paper title
-```
+This repository is accompanying the paper "Frequency Diversity for
+Ultra-Reliable and Secure Communications in Sub-THz Two-Ray Scenarios" (Karl-L.
+Besser, Eduard Jorswieck, and Justin Coon, submitted to IEEE ICC 2023).
 
 The idea is to give an interactive version of the calculations and presented
 concepts to the reader. One can also change different parameters and explore
@@ -13,11 +10,6 @@ different behaviors on their own.
 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/klb2/two-ray-worst-case-secrecy/HEAD)
-
-```diff
-! Change link in Binder badge
-```
-
 
 ## File List
 The following files are provided in this repository:
@@ -37,7 +29,9 @@ The following files are provided in this repository:
 - `secrecy_rate.py`: Python module that contains functions to calculate the
   secrecy rates.
 - `conditions_positive_zosc.py`: Python module that contains the functions to
-  check the sufficient conditions whether a positive ZOSC is possible.
+  check the necessary and sufficient conditions whether a positive ZOSC is
+  possible.
+
 
 ## Usage
 ### Running it online

@@ -1,8 +1,8 @@
 #!/bin/sh
 
-# ...
-# Information about the paper...
-# ...
+# This repository is accompanying the paper "Frequency Diversity for
+# Ultra-Reliable and Secure Communications in Sub-THz Two-Ray Scenarios" (K.-L.
+# Besser, E. Jorswieck, J. Coon, Oct. 2022, submitted to ICC 2023)
 #
 # Copyright (C) 2022 Karl-Ludwig Besser
 # License: GPLv3
