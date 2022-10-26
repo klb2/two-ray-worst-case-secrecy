@@ -32,26 +32,26 @@ def is_zosc_definitely_positive(d_min_bob: float, d_max_bob: float,
     LOGGER.info(f"RHS:\t{to_decibel(power_bound_eve):.1f}")
     return power_bound_bob > power_bound_eve
 
-def is_worst_case_sec_rate_zero(d_max_bob: float, d_min_eve: float,
+def can_zosc_be_positive(d_max_bob: float, d_min_eve: float,
                                 h_tx: float, h_rx_bob: float, h_rx_eve: float,
                                 c=constants.c):
     _bob = 1./length_los(d_max_bob, h_tx, h_rx_bob)**2 + 1./length_ref(d_max_bob, h_tx, h_rx_bob)**2
     _eve = 1./length_los(d_min_eve, h_tx, h_rx_eve)**2 + 1./length_ref(d_min_eve, h_tx, h_rx_eve)**2
     LOGGER.info(f"LHS:\t{_bob:E}")
     LOGGER.info(f"RHS:\t{_eve:E}")
-    return _bob <= _eve
+    return _bob > _eve
 
 
 def main(d_min_bob: float, d_max_bob: float, d_min_eve: float, freq:float,
          bw: float, h_tx: float, h_rx_bob: float, h_rx_eve: float):
-    zosc_prob_zero = is_worst_case_sec_rate_zero(d_max_bob, d_min_eve, h_tx,
-                                                 h_rx_bob, h_rx_eve)
-    LOGGER.info(f"ZOSC is probably zero: {zosc_prob_zero}")
+    zosc_prob_zero = can_zosc_be_positive(d_max_bob, d_min_eve, h_tx, h_rx_bob,
+                                          h_rx_eve)
+    LOGGER.info(f"ZOSC can be positive (necessary condition): {zosc_prob_zero}")
 
     zosc_def_positive = is_zosc_definitely_positive(d_min_bob, d_max_bob,
                                                     d_min_eve, freq, h_tx,
                                                     h_rx_bob, h_rx_eve)
-    LOGGER.info(f"ZOSC is definitely positive: {zosc_def_positive}")
+    LOGGER.info(f"ZOSC is definitely positive (sufficient condition): {zosc_def_positive}")
 
     actual_zosc = max_worst_case_sec_rate(d_min_bob, d_max_bob, d_min_eve,
                                           freq, bw, h_tx, h_rx_bob, h_rx_eve)
