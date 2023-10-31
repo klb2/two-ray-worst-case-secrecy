@@ -2,7 +2,7 @@
 
 # This repository is accompanying the paper "Frequency Diversity for
 # Ultra-Reliable and Secure Communications in Sub-THz Two-Ray Scenarios" (K.-L.
-# Besser, E. Jorswieck, J. Coon, Oct. 2022, submitted to ICC 2023)
+# Besser, E. Jorswieck, J. Coon, IEEE ICC 2023. doi:10.1109/ICC45041.2023.10279098).
 #
 # Copyright (C) 2022 Karl-Ludwig Besser
 # License: GPLv3

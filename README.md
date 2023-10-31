@@ -2,7 +2,8 @@
 
 This repository is accompanying the paper "Frequency Diversity for
 Ultra-Reliable and Secure Communications in Sub-THz Two-Ray Scenarios" (Karl-L.
-Besser, Eduard Jorswieck, and Justin Coon, submitted to IEEE ICC 2023).
+Besser, Eduard Jorswieck, and Justin Coon, IEEE ICC 2023.
+[doi:10.1109/ICC45041.2023.10279098](https://doi.org/10.1109/ICC45041.2023.10279098)).
 
 The idea is to give an interactive version of the calculations and presented
 concepts to the reader. One can also change different parameters and explore
@@ -74,10 +75,23 @@ bash run.sh
 ## Acknowledgements
 This research was supported by the Federal	Ministry of Education and Research
 Germany (BMBF) as part of the 6G Research and Innovation Cluster 6G-RIC under
-Grant 16KISK020K and by the EPSRC under grant number EP/T02612X/1.
+Grant 16KISK031 and by the EPSRC under grant number EP/T02612X/1.
 
 
 ## License and Referencing
 This program is licensed under the GPLv3 license. If you in any way use this
 code for research that results in publications, please cite our original
 article listed above.
+
+```bibtex
+@inproceedings{Besser2023,
+  author = {Besser, Karl-Ludwig and Jorswieck, Eduard A. and Coon, Justin P.},
+  title = {Frequency Diversity for Ultra-Reliable and Secure Communications in Sub-{THz} Two-Ray Scenarios},
+  booktitle = {ICC 2023 -- IEEE International Conference on Communications},
+  year = {2023},
+  month = {5},
+  pages = {5817--5823},
+  publisher = {IEEE},
+  doi = {10.1109/ICC45041.2023.10279098},
+}
+```
