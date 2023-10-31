@@ -1,5 +1,8 @@
 # Worst-Case Secrecy Rate Optimization for Two-Ray Scenarios
 
+[![DOI](https://img.shields.io/badge/doi-10.1109/ICC45041.2023.10279098-informational)](https://doi.org/10.1109/ICC45041.2023.10279098)
+![GitHub](https://img.shields.io/github/license/klb2/two-ray-worst-case-secrecy)
+
 This repository is accompanying the paper "Frequency Diversity for
 Ultra-Reliable and Secure Communications in Sub-THz Two-Ray Scenarios" (Karl-L.
 Besser, Eduard Jorswieck, and Justin Coon, IEEE ICC 2023.
